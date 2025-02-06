@@ -18,3 +18,12 @@ plt.show()
 # The bar() and barh() take the keyword argument color to set the color of the bars
 
 #you can used named colors or hexadecimal color values
+
+
+'''Bar Width
+The bar() takes the keyword argument width to set the width of the bars:'''
+
+# For horizontal bars, use height instead of width.
+#The default height value is 0.8
+plt.bar(x, y, width = 0.1)
+plt.show()

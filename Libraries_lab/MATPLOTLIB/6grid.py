@@ -19,6 +19,16 @@ plt.show()
 
 #You can use the axis parameter in the grid() 
 # function to specify which grid lines to display
-plt.grid(axis = 'x')
+plt.grid(axis = 'x') #/y
+
+plt.show()
+
+#Set Line Properties for the Grid
+#You can also set the line properties of the grid,
+#  like this: grid(color = 'color', linestyle = 'linestyle', linewidth = number).
+
+plt.plot(x, y)
+
+plt.grid(color = 'green', linestyle = '--', linewidth = 0.5)
 
 plt.show()
