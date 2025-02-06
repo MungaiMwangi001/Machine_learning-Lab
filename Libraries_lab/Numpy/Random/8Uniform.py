@@ -20,7 +20,7 @@ print(x)
 
 #visualization
 import seaborn as sns
-import matplolib.pyplot as plt
+import matplotlib.pyplot as plt
 
 sns.distplot(random.uniform(size=1000), hist= False)
 plt.show()
