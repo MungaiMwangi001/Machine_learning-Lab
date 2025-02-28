@@ -16,7 +16,7 @@ df = df[(df["value"] >= lower_bound) & (df["value"] <= upper_bound)]
 def draw_line_plot():
     fig, ax = plt.subplots(figsize=(12, 6))
     ax.plot(df.index, df["value"], color='r', linewidth=1)
-    ax.set_title("Daily freeCodeCamp Forum Page Views 5/2016-12/2019")
+    ax.set_title("Daily FCC Forum Page Views 5/2016-12/2019")
     ax.set_xlabel("Date")
     ax.set_ylabel("Page Views")
     fig.savefig("line_plot.png")
@@ -42,6 +42,7 @@ def draw_box_plot():
     df_box['month'] = df_box['date'].dt.month_name().str[:3]
     
     fig, axes = plt.subplots(1, 2, figsize=(15, 6))
+    
     sns.boxplot(x="year", y="value", data=df_box, ax=axes[0])
     axes[0].set_title("Year-wise Box Plot (Trend)")
     axes[0].set_xlabel("Year")
